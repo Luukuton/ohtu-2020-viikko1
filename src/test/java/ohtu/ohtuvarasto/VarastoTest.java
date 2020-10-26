@@ -89,7 +89,7 @@ public class VarastoTest {
         double withdrawnBalance = varasto.otaVarastosta(varasto.getSaldo() + 1);
 
         // Ei muutosta saldossa.
-        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+        assertEquals(1, varasto.getSaldo(), vertailuTarkkuus);
         assertEquals(withdrawnBalance, previousBalance, vertailuTarkkuus);
     }
 
