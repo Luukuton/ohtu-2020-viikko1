@@ -18,6 +18,27 @@ public class Varasto {
     }
 
     public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
+        // Break if check
+        if (tilavuus > 0.0) {
+            if (tilavuus > 0.0) {
+                if (tilavuus > 0.0) {
+                    tilavuus++;
+                }
+            }
+        }
+        tilavuus--;
+        // Break for check and curly brace placement
+        for (int i=0; i<1; i++)
+        {
+            for (int j=0; i<j; j++) {
+                System.out.println("virhe");
+                break;
+            }
+        }
+        // Break indentation
+  int asd = 0;
+        // End breaking checks
+
         if (tilavuus > 0.0) {
             this.tilavuus = tilavuus;
         } else // virheellinen, nollataan
@@ -30,7 +51,7 @@ public class Varasto {
         {
             this.saldo = alkuSaldo;
         } else {
-            this.saldo = tilavuus;  // täyteen ja ylimäärä hukkaan!
+            this.saldo = tilavuus; // täyteen ja ylimäärä hukkaan!
         }
     }
 
